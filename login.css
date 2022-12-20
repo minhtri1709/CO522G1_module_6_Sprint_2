@@ -1,0 +1,295 @@
+*
+{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+body
+{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#E9EBEE;
+
+}
+
+/* section Style Start*/
+
+section
+{
+    overflow: hidden;
+    width:100%;
+    height: auto;
+}
+
+/* Container Style Start */
+
+.container
+{
+    width: 75%;
+    height: 650px;
+    margin: 40px auto;
+}
+
+.form_login,
+.form_regestration
+{
+    position: relative;
+    width: 50%;
+    height: 550px;
+    float: left;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* form_login Style Start */
+
+.container .form_login
+{
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.container .form_login .login_content
+{
+    padding: 25px;
+    margin-top: -35px;
+}
+
+.container .form_login .login_content h2 {
+    font-size: 40px;
+    font-family: Arial, sans-serif, serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #4e4e4e;
+}
+
+.container form label {
+    display: inline-block;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: .3px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+
+.container form a {
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: .3px;
+    float: right;
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.aroww_img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    display: inline-block;
+    margin: -3px -4px 0 0;
+}
+
+.container .form_login .login_content input
+{
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+    outline: none;
+    border: none;
+}
+
+.container .form_login .login_content input[type="checkbox"]
+{
+    display: inline-block;
+    float: left;
+    width: auto;
+    background: none;
+    margin: 9px 4px 0 0;
+    -webkit-appearance: none;
+    border: 1.5px solid #b5b5b5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 7px;
+    position: relative;
+}
+
+.container .form_login .login_content input[type="checkbox"]:checked:after
+{
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    color: #99a1a7;
+}
+
+.container .form_login .login_content input[type="checkbox"]:active, .container .form_login .login_content input[type="checkbox"]:checked:active
+{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.container .form_login .login_content input[type="checkbox"]:checked
+{
+    background-color: #e9ecee;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    color: #99a1a7;
+}
+
+.container .form_login .login_content input[type="submit"]
+{
+    cursor: pointer;
+    background-color: #9C27B0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 13px;
+    transition: all .4s;
+}
+
+.container .form_login .login_content input[type="submit"]:hover {
+    background-color: #c006e0;
+}
+
+/* other_contacts Style Start */
+
+.other_contacts {
+    text-align: center;
+    margin-top: -42px;
+    padding: 15px;
+}
+.other_contacts h3 {
+    text-transform: capitalize;
+    color: #a0a0a0;
+    font-size: 20px;
+    letter-spacing: .3px;
+    font-weight: 400;
+    font-family: Arial, sans-serif, serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.other_contacts h3:before, h3:after {
+    border: .5px solid;
+    flex: 1 0 20px;
+    content: '';
+    margin: 0 20px 0 20px;
+}
+.other_contacts a i {
+    font-size: 23px;
+    margin: 0 10px;
+    color: #a0a0a0ba;
+    transition: all .4s;
+}
+.other_contacts a i:hover {
+    color: #d744f199;
+}
+/* other_contacts Style End */
+
+footer.form_login-footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #a0a0a0ba;
+}
+
+/* form_login Style End */
+
+/* form_regestration Style Start */
+
+.container .form_regestration
+{
+    background: linear-gradient(to bottom right, #272233, #9327A6);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.regestration_content
+{
+    margin-top: 30%;
+}
+
+.container .form_regestration .User_Image
+{
+    width: 100px;
+    height: 100px;
+    margin: 80px auto;
+    margin-bottom: 0 !important;
+}
+
+
+.container .form_regestration .User_Image .fa {
+    color: #fff;
+    font-size: 6em;
+}
+.container .form_regestration h2
+{
+    text-align: center;
+    color: #fff;
+    margin: 30px 0 30px 0;
+    font-size: 50px;
+    font-family: Arial, sans-serif, serif;
+    font-weight: bold;
+}
+
+.container .form_regestration p
+{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    width: 85%;
+    margin: 0 auto;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.container .form_regestration a
+{
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    padding: 15px;
+    width: 35%;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s;
+}
+
+.container .form_regestration a:hover
+{
+    background-color: #3c23494f;
+}
+
+.btn
+{
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    padding: 24px;
+    width: 155px;
+}
+
+/* Container Style End */
+/* section Style End */

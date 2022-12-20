@@ -1,0 +1,131 @@
+<div class="section-fluid-main">
+  <div class="section-row">
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Male Goofy Face</h2>
+    </div>
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Toy Pig</h2>
+    </div>
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Shy Portrait</h2>
+    </div>
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Skateboard Face</h2>
+    </div>
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Mirror Reflection</h2>
+    </div>
+    <div class="section-col">
+      <div class="section">
+        <div class="section-in">
+          <img src="https://assets.codepen.io/1462889/sl6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hover-text">
+      <h2>Funny Bunny</h2>
+    </div>
+  </div>
+</div>
+
+
+<!--  <div *ngFor="let item of (talentList$ | async)!">-->
+<!--    <h5>{{item.name | titlecase}}</h5>-->
+<!--    <div class="product__item__price">{{item.price * (1 - item.discount / 100) | currency: "VND"}}-->
+<!--      <span *ngIf="item.discount > 0">{{item.price | currency: "VND"}}</span>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <img src="{{item.image}}">-->
+<!--    </div>-->
+<!--  </div>-->
+
+<div class="container" >
+  <div class="header__search">
+    <div class="header__search-input-wrap">
+      <input type="text" class="header__search-input" placeholder="Tìm sản phẩm ..." [(ngModel)]="name">
+    </div>
+    <button class="header__search-btn" (click)="getAllList()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+           class="bi bi-search" viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+  <div class="body row row-pb-md">
+    <div class="col-lg-3 mb-4 text-center " *ngFor="let item of (talentList$ | async)">
+      <!--      <div class="col-lg-3 mb-4 text-center " *ngFor="let item of (alcoholList$ | async)">-->
+      <div class="product-entry border" style="width:250px;height: auto">
+        <a routerLink="detail" class="prod-img">
+          <img src="{{item.image}}" style="height: 300px;width: 250px; border-radius: 5px " class="shadow">
+          <!--        <img style="background-image: url({{item.image}})" class="img-fluid" alt="Free html5 bootstrap 4 template">-->
+          <div class="desc">
+            <h2>{{item.name}}</h2>
+            <div class="product__item__price">{{item.price * (1 - item.discount / 100) | currency: "VND"}}
+              <del *ngIf="item.discount > 0">{{item.price | currency: "VND"}}</del></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+<div class="width-inset mt-8 mb-5" id="featured-clients">
+  <h2 class="smallcaps " data-sr-id="25"
+      style="visibility: visible; opacity: 1; transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;">Some of the
+    Clients We Work With:</h2>
+  <div class="logos">
+    <img src="https://centraltalentbooking.com/uploads/images/_AUTOx100_fit_center-center_100_none/logo-abc.png"
+         alt="Logo abc" class="sr" height="100px"
+         data-sr-id="26"
+         style="visibility: visible; opacity: 1; transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;">
+    <img src="https://centraltalentbooking.com/uploads/images/_AUTOx100_fit_center-center_100_none/logo-spotify.png"
+         alt="Logo spotify" class="sr"height="100px"
+         data-sr-id="27"
+         style="visibility: visible; opacity: 1; transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;">
+    <img src="https://centraltalentbooking.com/uploads/images/_AUTOx100_fit_center-center_100_none/logo-sony.png"
+         alt="Logo sony" class="sr"height="100px"
+         data-sr-id="28"
+         style="visibility: visible; opacity: 1; transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;">
+    <img src="https://centraltalentbooking.com/uploads/images/_AUTOx100_fit_center-center_100_none/logo-youtube.png"
+         alt="Logo youtube" class="sr"height="100px"x
+         data-sr-id="31"
+         style="visibility: visible; opacity: 1; transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;">
+  </div>
+</div>
